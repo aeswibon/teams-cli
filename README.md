@@ -138,8 +138,8 @@ See [**CONTRIBUTING.md**](./CONTRIBUTING.md).
 
 Quick wins:
 
-- https://github.com/aeswibon/teams-cli/labels/good%20first%20issue
-- https://github.com/aeswibon/teams-cli/labels/help%20wanted
+- [good first issue](https://github.com/aeswibon/teams-cli/labels/good%20first%20issue)
+- [help wanted](https://github.com/aeswibon/teams-cli/labels/help%20wanted)
 
 ## Compatibility notes
 
@@ -147,7 +147,7 @@ Microsoft 365 tenants vary: the same command can succeed in one tenant and fail 
 
 Common pointers:
 
-- **401 Unauthorized**: token expired/invalid, wrong audience (not Microsoft Graph), or missing `Authorization: Bearer ...` (re-run `teams-cli init` or refresh `TEAMS_CLI_TOKEN` / `--api-key`).
+- **401 Unauthorized**: missing/expired token, token invalid, or wrong audience (not Microsoft Graph). Re-run `teams-cli init` or provide a fresh token via `TEAMS_CLI_TOKEN` / `--api-key`.
 - **403 Forbidden**: app/tenant lacks required Graph permissions for the endpoint (or admin consent not granted), or policy blocks access; verify Graph permissions and consent for your tenant.
 
 ## Troubleshooting
@@ -158,7 +158,7 @@ Common pointers:
 | Wrong audience on manual token | Must be a **Graph** access JWT, not another resource                                    |
 | Delegated vs app-only          | App-only needs **`user_id`**; `/me` needs a user-delegated token without app-only paths |
 
-## Release & maintainers
+## Release and maintainers
 
 - **CI** on `master` / PRs: `gofmt`, **golangci-lint**, **govulncheck**, tests.
 - **Tags** `v*`: GoReleaser publishes GitHub releases on this repo.
