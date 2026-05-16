@@ -58,8 +58,11 @@ JSON output: add **`--json`** to any command that prints structured data.
 
 To regenerate the demo GIF locally:
 
-```bash
 Install VHS: https://github.com/charmbracelet/vhs
+
+This demo is intentionally tokenless. It only shows `--help` output and an expected authentication failure from `doctor`.
+
+```bash
 vhs docs/demo.tape
 ```
 

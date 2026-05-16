@@ -12,6 +12,23 @@ Type "go run . --help"
 Enter
 Sleep 1s
 
-Type "go run . messages \"CHAT_ID_REDACTED\" --limit 3"
+Type "go run . init --help"
+Enter
+Sleep 1s
+
+# Demo is intentionally tokenless; doctor should fail safely.
+Type "go run . doctor || true"
+Enter
+Sleep 1s
+
+Type "go run . chats --help"
+Enter
+Sleep 1s
+
+Type "go run . messages --help"
+Enter
+Sleep 1s
+
+Type "go run . request --help"
 Enter
 Sleep 1s
