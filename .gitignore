@@ -23,3 +23,5 @@ teams-cli-app.zip
 *.swo
 *~
 .DS_Store
+# Local git worktrees
+.worktrees/
