@@ -54,6 +54,15 @@ teams-cli messages "CHAT_ID" --limit 50
 
 JSON output: add **`--json`** to any command that prints structured data.
 
+## Demo
+
+To regenerate the demo GIF locally:
+
+```bash
+brew install vhs
+vhs docs/demo.tape
+```
+
 ## Authentication
 
 ### MSAL (Azure AD app, recommended for automation)
