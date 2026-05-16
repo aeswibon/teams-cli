@@ -43,7 +43,7 @@ changelog:
 
 release:
   github:
-    owner: abhiudayg
+    owner: aeswibon
     name: teams-cli
 
 homebrew_casks:
@@ -54,7 +54,7 @@ homebrew_casks:
       - teams-cli
     directory: Casks
     repository:
-      owner: abhiudayg_Zeta
+      owner: aeswibon
       name: homebrew-teams-cli
       branch: main
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
@@ -62,7 +62,7 @@ homebrew_casks:
       name: github-actions[bot]
       email: 41898282+github-actions[bot]@users.noreply.github.com
     commit_msg_template: "Brew cask update for {{ .ProjectName }} {{ .Tag }}"
-    homepage: "https://github.com/abhiudayg/teams-cli"
+    homepage: "https://github.com/aeswibon/teams-cli"
     description: "CLI for Microsoft Teams chats and messages (chatsvc / Graph API)"
     license: "MIT"
     caveats: |
@@ -70,7 +70,7 @@ homebrew_casks:
       This cask clears Gatekeeper quarantine on the binary after install so it can run without notarization.
       If macOS still blocks the binary, run: xattr -dr com.apple.quarantine $(brew --prefix)/bin/teams-cli
     url:
-      verified: "github.com/abhiudayg/teams-cli/"
+      verified: "github.com/aeswibon/teams-cli/"
     hooks:
       post:
         install: |

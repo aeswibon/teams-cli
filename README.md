@@ -20,22 +20,27 @@ Read **Microsoft Teams** chats and messages from the terminal using the **Micros
 ## Install
 
 ```bash
-go install github.com/abhiudayg/teams-cli@latest
+go install github.com/aeswibon/teams-cli@latest
 ```
 
-**Homebrew (macOS)** — private tap; [configure a GitHub token](https://docs.brew.sh/Installation#github-api-token) for `brew` if needed:
+## Prebuilt binaries
+
+Download prebuilt binaries from GitHub Releases:
+
+https://github.com/aeswibon/teams-cli/releases
+
+**Homebrew (macOS)**
+
+Homebrew is not available yet under the new repository.
 
 ```bash
-brew tap abhiudayg_Zeta/teams-cli
-brew install --cask teams-cli
+# (coming soon)
 ```
-
-Tap repo: [abhiudayg_Zeta/homebrew-teams-cli](https://github.com/abhiudayg_Zeta/homebrew-teams-cli). The cask clears Gatekeeper quarantine on the binary after install.
 
 **Build from source:**
 
 ```bash
-git clone https://github.com/abhiudayg/teams-cli.git
+git clone https://github.com/aeswibon/teams-cli.git
 cd teams-cli
 go build -o teams-cli .
 ```
@@ -140,20 +145,7 @@ Needed for app-only access to `/users/{id}/…`:
 ## Release & maintainers
 
 - **CI** on `master` / PRs: `gofmt`, **golangci-lint**, **govulncheck**, tests.
-- **Tags** `v*`: GoReleaser publishes GitHub releases on this repo and commits **`Casks/teams-cli.rb`** to [homebrew-teams-cli](https://github.com/abhiudayg_Zeta/homebrew-teams-cli).
-
-### Token for the Homebrew tap (no GitHub App required)
-
-The default **`GITHUB_TOKEN`** in Actions cannot push to another repository. Use a **personal access token** stored as repo secret **`HOMEBREW_TAP_GITHUB_TOKEN`**:
-
-1. **[Fine-grained PAT](https://github.com/settings/tokens?type=beta)** (preferred): resource owner **`abhiudayg_Zeta`**, repository **`homebrew-teams-cli` only**, permission **Contents: Read and write**.
-2. **Classic PAT**: **`repo`** scope (broader than necessary); only if fine-grained is not available.
-
-Add the token under **this** repo → **Settings → Secrets and variables → Actions**.
-
-If your **organization blocks PATs or GitHub Apps** for automation, ask an admin to allow one of the above or to perform tap updates manually after each release.
-
-People **installing** the **private** tap still use **their own** GitHub auth with Homebrew (e.g. **`HOMEBREW_GITHUB_API_TOKEN`**).
+- **Tags** `v*`: GoReleaser publishes GitHub releases on this repo.
 
 ## Author
 
