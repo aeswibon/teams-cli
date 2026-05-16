@@ -1,4 +1,4 @@
-.PHONY: build install-local test clean fmt deps
+.PHONY: build install-local test clean fmt deps ci
 
 # Build the CLI binary
 build:
@@ -28,3 +28,17 @@ clean:
 deps:
 	go mod download
 	go mod tidy
+
+# Run the same checks as CI
+ci:
+	go mod download
+	@test -z "$$(gofmt -l .)"
+	@mkdir -p ./.bin
+	@if ! command -v golangci-lint >/dev/null 2>&1; then \
+		echo "Installing golangci-lint..."; \
+		curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b ./.bin v1.60.3; \
+		PATH="$$PWD/.bin:$$PATH"; \
+	fi; \
+	PATH="$$PWD/.bin:$$PATH" golangci-lint run ./...
+	go run golang.org/x/vuln/cmd/govulncheck@latest ./...
+	go test ./... -count=1

@@ -35,13 +35,8 @@ For larger ideas, open an issue first so maintainers can agree on direction befo
    Optional, same as CI locally:
 
    ```bash
-   make fmt
-   test -z "$(gofmt -l .)"
-   golangci-lint run ./...
-   go install golang.org/x/vuln/cmd/govulncheck@latest && govulncheck ./...
+   make ci
    ```
-
-   Install [golangci-lint](https://golangci-lint.run/welcome/install/) if you don’t have it.
 
 ## Project layout (brief)
 
