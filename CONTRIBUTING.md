@@ -21,7 +21,7 @@ For larger ideas, open an issue first so maintainers can agree on direction befo
 2. **Clone** your fork and add this repo as `upstream` if you use one:
 
    ```bash
-   git clone https://github.com/abhiudayg/teams-cli.git
+   git clone https://github.com/aeswibon/teams-cli.git
    cd teams-cli
    ```
 
@@ -72,4 +72,4 @@ See [**SECURITY.md**](./SECURITY.md). Do not file security problems as public is
 
 ## Questions
 
-Open a [GitHub issue](https://github.com/abhiudayg/teams-cli/issues) with context and what you’re trying to do. Clear questions get faster answers.
+Open a [GitHub issue](https://github.com/aeswibon/teams-cli/issues) with context and what you’re trying to do. Clear questions get faster answers.

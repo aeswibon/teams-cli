@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/abhiudayg/teams-cli/internal/api"
-	"github.com/abhiudayg/teams-cli/internal/config"
+	"github.com/aeswibon/teams-cli/internal/api"
+	"github.com/aeswibon/teams-cli/internal/config"
 	"github.com/spf13/cobra"
 )
 

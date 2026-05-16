@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/abhiudayg/teams-cli/internal/api"
-	"github.com/abhiudayg/teams-cli/internal/config"
+	"github.com/aeswibon/teams-cli/internal/api"
+	"github.com/aeswibon/teams-cli/internal/config"
 )
 
 func loadMessenger() (api.Messenger, error) {

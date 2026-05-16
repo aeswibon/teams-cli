@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/abhiudayg/teams-cli/cmd"
+	"github.com/aeswibon/teams-cli/cmd"
 )
 
 func main() {

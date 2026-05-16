@@ -1,4 +1,4 @@
-module github.com/abhiudayg/teams-cli
+module github.com/aeswibon/teams-cli
 
 go 1.26.3
 

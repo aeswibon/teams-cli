@@ -10,7 +10,7 @@ Security fixes are applied to the **default branch** (`master`) and released as 
 
 Instead:
 
-1. Use **[GitHub private vulnerability reporting](https://github.com/abhiudayg/teams-cli/security/advisories/new)** for this repository if it is enabled for your account, **or**
+1. Use **[GitHub private vulnerability reporting](https://github.com/aeswibon/teams-cli/security/advisories/new)** for this repository if it is enabled for your account, **or**
 2. Contact the repository maintainers privately (for example via GitHub profile contact options your organization allows).
 
 Include:

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/abhiudayg/teams-cli/internal/auth"
-	"github.com/abhiudayg/teams-cli/internal/config"
+	"github.com/aeswibon/teams-cli/internal/auth"
+	"github.com/aeswibon/teams-cli/internal/config"
 )
 
 // NewMessenger returns a Graph API client.

@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/abhiudayg/teams-cli/internal/config"
+	"github.com/aeswibon/teams-cli/internal/config"
 	"github.com/spf13/cobra"
 )
 
