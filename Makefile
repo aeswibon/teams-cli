@@ -1,4 +1,4 @@
-.PHONY: build install-local test clean fmt
+.PHONY: build install-local test clean fmt deps
 
 # Build the CLI binary
 build:

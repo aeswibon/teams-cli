@@ -17,7 +17,7 @@ For larger ideas, open an issue first so maintainers can agree on direction befo
 
 ## Development setup
 
-1. **Go** — use the version in [`go.mod`](./go.mod) (currently 1.26.x). [setup-go](https://go.dev/dl/) or your package manager is fine.
+1. **Go** — use the version in [`go.mod`](./go.mod) (currently 1.22.x). [setup-go](https://go.dev/dl/) or your package manager is fine.
 2. **Clone** your fork and add this repo as `upstream` if you use one:
 
    ```bash

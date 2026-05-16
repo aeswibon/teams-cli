@@ -13,7 +13,7 @@ Read **Microsoft Teams** chats and messages from the terminal using the **Micros
 
 ## Requirements
 
-- **From source:** Go **1.26.3** (see `go.mod`)
+- **From source:** Go **1.22** (see `go.mod`)
 - **MSAL path:** Azure AD app with **Application** permissions (see below), **admin consent**, and the target user’s **Graph user ID** for `/users/{id}/…`
 - **Manual token path:** A JWT with a **Microsoft Graph** audience (`ValidateGraphToken` must accept it)
 
@@ -23,7 +23,7 @@ Read **Microsoft Teams** chats and messages from the terminal using the **Micros
 go install github.com/aeswibon/teams-cli@latest
 ```
 
-## Prebuilt binaries
+### Prebuilt binaries
 
 Download prebuilt binaries from GitHub Releases:
 
