@@ -35,6 +35,13 @@ Download prebuilt binaries from GitHub Releases:
 
 https://github.com/aeswibon/teams-cli/releases
 
+### Homebrew (macOS)
+
+```bash
+brew tap aeswibon/teams-cli
+brew install teams-cli
+```
+
 **Build from source:**
 
 ```bash

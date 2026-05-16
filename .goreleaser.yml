@@ -45,3 +45,28 @@ release:
   github:
     owner: aeswibon
     name: teams-cli
+
+homebrew_casks:
+  - name: teams-cli
+    ids:
+      - default
+    binaries:
+      - teams-cli
+    directory: Casks
+    repository:
+      owner: aeswibon
+      name: homebrew-teams-cli
+      branch: master
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    commit_author:
+      name: github-actions[bot]
+      email: 41898282+github-actions[bot]@users.noreply.github.com
+    commit_msg_template: "Brew cask update for {{ .ProjectName }} {{ .Tag }}"
+    homepage: "https://github.com/aeswibon/teams-cli"
+    description: "CLI for Microsoft Teams chats and messages via Microsoft Graph API"
+    license: "MIT"
+    caveats: |
+      Run `teams-cli init` to configure authentication before first use.
+      See https://github.com/aeswibon/teams-cli for setup instructions.
+    url:
+      verified: "github.com/aeswibon/teams-cli/"
