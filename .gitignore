@@ -25,3 +25,6 @@ teams-cli-app.zip
 .DS_Store
 # Local git worktrees
 .worktrees/
+
+# Local planning artifacts
+docs/superpowers/
