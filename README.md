@@ -4,6 +4,12 @@
 
 Read **Microsoft Teams** chats and messages from the terminal using the **Microsoft Graph API**. Sign in with an **Azure AD application** (MSAL client credentials + user ID) or paste a **Graph access token** you obtained elsewhere.
 
+## Why teams-cli?
+
+- Fast triage: inspect chats/messages from a shell without opening the Teams UI
+- Scriptable JSON: `--json` makes it easy to pipe into `jq` and automation
+- Focused scope: Teams chats/messages and Graph auth, without trying to be a full Graph client
+
 ## Features
 
 - List chats and load messages via Graph (`/me/chats`, … or `/users/{id}/…` for app-only tokens)
@@ -125,6 +131,24 @@ Needed for app-only access to `/users/{id}/…`:
 
 - Treat **`config.toml`** and tokens like passwords; **never commit** them.
 - Tokens in the file expire; limit who can read `~/.teams-cli/`.
+
+## Contributing
+
+See [**CONTRIBUTING.md**](./CONTRIBUTING.md).
+
+Quick wins:
+
+- https://github.com/aeswibon/teams-cli/labels/good%20first%20issue
+- https://github.com/aeswibon/teams-cli/labels/help%20wanted
+
+## Compatibility notes
+
+Microsoft 365 tenants vary: the same command can succeed in one tenant and fail in another depending on Entra ID policies, admin consent, and whether your token is **delegated** vs **application**.
+
+Common pointers:
+
+- **401 Unauthorized**: token expired/invalid, wrong audience (not Microsoft Graph), or missing `Authorization: Bearer ...` (re-run `teams-cli init` or refresh `TEAMS_CLI_TOKEN` / `--api-key`).
+- **403 Forbidden**: app/tenant lacks required Graph permissions for the endpoint (or admin consent not granted), or policy blocks access; verify Graph permissions and consent for your tenant.
 
 ## Troubleshooting
 
