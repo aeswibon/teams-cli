@@ -15,13 +15,13 @@ labels: bug
 - OS (e.g. macOS 15, Ubuntu 24.04): 
 - Go version (`go version`): 
 - API backend (`graph` / `chatsvc` from config or `teams-cli doctor`): 
-- Token type (required: `delegated` / `app-only` (MSAL)): 
+- Auth flow (required: delegated (user) / app-only (client credentials); see `teams-cli doctor`): 
 
 ### Graph request details (required when API backend is `graph`)
 
-- Graph endpoint path being called (required, e.g. `/v1.0/me/joinedTeams`):
+- Graph endpoint path (required: path only, relative to `/v1.0`; no query params; redact IDs, e.g. `/me/joinedTeams`):
 - HTTP status (required, e.g. `401`, `403`, `429`):
-- `request-id` response header (required if present):
+- `request-id` (required if present; from response headers or `--debug` output):
 
 ## Steps to reproduce
 
