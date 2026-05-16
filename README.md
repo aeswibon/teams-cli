@@ -149,6 +149,13 @@ Needed for app-only access to `/users/{id}/…`:
 
 See [**CONTRIBUTING.md**](./CONTRIBUTING.md).
 
+## Project
+
+- Roadmap: [ROADMAP.md](./ROADMAP.md)
+- Maintainers: [MAINTAINERS.md](./MAINTAINERS.md)
+- Support: [SUPPORT.md](./SUPPORT.md)
+- Changelog: [CHANGELOG.md](./CHANGELOG.md)
+
 Quick wins:
 
 - [good first issue](https://github.com/aeswibon/teams-cli/labels/good%20first%20issue)
