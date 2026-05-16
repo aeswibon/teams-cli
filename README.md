@@ -59,7 +59,7 @@ JSON output: add **`--json`** to any command that prints structured data.
 To regenerate the demo GIF locally:
 
 ```bash
-brew install vhs
+Install VHS: https://github.com/charmbracelet/vhs
 vhs docs/demo.tape
 ```
 
