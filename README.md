@@ -58,11 +58,12 @@ JSON output: add **`--json`** to any command that prints structured data.
 
 To regenerate the demo GIF locally:
 
-Install VHS: https://github.com/charmbracelet/vhs
+Install [VHS](https://github.com/charmbracelet/vhs).
 
-This demo is intentionally tokenless. It only shows `--help` output and an expected authentication failure from `doctor`.
+This demo is intentionally tokenless and help-only. It only runs `./teams-cli ... --help` commands, so it does not read your existing `~/.teams-cli/config.toml` or `TEAMS_CLI_TOKEN`.
 
 ```bash
+go build -o teams-cli .
 vhs docs/demo.tape
 ```
 

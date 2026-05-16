@@ -8,27 +8,22 @@ Set Height 700
 Set Theme "Builtin Solarized Dark"
 Set TypingSpeed 60ms
 
-Type "go run . --help"
+Type "./teams-cli --help"
 Enter
 Sleep 1s
 
-Type "go run . init --help"
+Type "./teams-cli init --help"
 Enter
 Sleep 1s
 
-# Demo is intentionally tokenless; doctor should fail safely.
-Type "go run . doctor || true"
+Type "./teams-cli chats --help"
 Enter
 Sleep 1s
 
-Type "go run . chats --help"
+Type "./teams-cli messages --help"
 Enter
 Sleep 1s
 
-Type "go run . messages --help"
-Enter
-Sleep 1s
-
-Type "go run . request --help"
+Type "./teams-cli request --help"
 Enter
 Sleep 1s
