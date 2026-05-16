@@ -1,0 +1,25 @@
+# Binary
+teams-cli
+
+# Build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+vendor/
+go.work
+
+# Teams app package (removed from repo)
+teams-cli-app.zip
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
