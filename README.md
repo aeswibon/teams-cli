@@ -1,6 +1,8 @@
 # Teams CLI
 
-![teams-cli logo](icons/teams-cli-logo.png)
+<div align="center">
+  <img src="icons/teams-cli-logo.png" alt="teams-cli logo" width="400">
+</div>
 
 Read **Microsoft Teams** chats and messages from the terminal using the **Microsoft Graph API**. Sign in with an **Azure AD application** (MSAL client credentials + user ID) or paste a **Graph access token** you obtained elsewhere.
 
