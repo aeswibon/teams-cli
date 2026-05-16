@@ -27,4 +27,5 @@ teams-cli-app.zip
 .worktrees/
 
 # Local planning artifacts
-docs/superpowers/
+docs/superpowers/plans/
+docs/superpowers/specs/
