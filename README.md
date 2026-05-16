@@ -35,12 +35,6 @@ Homebrew is not available yet under the new repository (`aeswibon/teams-cli`).
 
 Historical note: a private Homebrew tap existed for the earlier (private) repo, but it is not supported for this repo.
 
-Maintainer notes (tap automation):
-
-- The default `GITHUB_TOKEN` in GitHub Actions cannot push to a different repository.
-- When a new tap is set up under `aeswibon`, it will likely require a dedicated token secret (similar to the previous `HOMEBREW_TAP_GITHUB_TOKEN`).
-- People installing a private tap use their own Homebrew GitHub auth (e.g. `HOMEBREW_GITHUB_API_TOKEN`).
-
 **Build from source:**
 
 ```bash

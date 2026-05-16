@@ -45,35 +45,3 @@ release:
   github:
     owner: aeswibon
     name: teams-cli
-
-homebrew_casks:
-  - name: teams-cli
-    ids:
-      - default
-    binaries:
-      - teams-cli
-    directory: Casks
-    repository:
-      owner: aeswibon
-      name: homebrew-teams-cli
-      branch: main
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
-    commit_author:
-      name: github-actions[bot]
-      email: 41898282+github-actions[bot]@users.noreply.github.com
-    commit_msg_template: "Brew cask update for {{ .ProjectName }} {{ .Tag }}"
-    homepage: "https://github.com/aeswibon/teams-cli"
-    description: "CLI for Microsoft Teams chats and messages (chatsvc / Graph API)"
-    license: "MIT"
-    caveats: |
-      Tokens are copied from your browser session; see `teams-cli doctor` and the README.
-      This cask clears Gatekeeper quarantine on the binary after install so it can run without notarization.
-      If macOS still blocks the binary, run: xattr -dr com.apple.quarantine $(brew --prefix)/bin/teams-cli
-    url:
-      verified: "github.com/aeswibon/teams-cli/"
-    hooks:
-      post:
-        install: |
-          if OS.mac?
-            system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/teams-cli"]
-          end
