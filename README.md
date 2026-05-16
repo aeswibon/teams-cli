@@ -33,13 +33,7 @@ https://github.com/aeswibon/teams-cli/releases
 
 Homebrew is not available yet under the new repository (`aeswibon/teams-cli`).
 
-Historical note (previous private tap; may not work):
-
-```bash
-# Previous tap (historical):
-# brew tap abhiudayg_Zeta/teams-cli
-# brew install --cask teams-cli
-```
+Historical note: a private Homebrew tap existed for the earlier (private) repo, but it is not supported for this repo.
 
 Maintainer notes (tap automation):
 
